@@ -16,7 +16,7 @@ class Post(BaseModel):## we use this class to define how our post properties (po
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello Worlds"}
+    return {"message": "Hello World"}
 
 @app.get("/posts")
 def get_posts():
