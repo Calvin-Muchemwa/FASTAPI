@@ -61,7 +61,7 @@ def delete_post(id:int):
     my_posts.pop(i)
     return{"message":f"post with ID: {id} has successfully been deleted"}
 
-@app.put("/posts/{id}",status_code=status.HTTP_201_CREATED)##put request when updating post
+@app.put("/posts/{id}",status_code=status.HTTP_201_CREATED)##put request when updating value
 def update_post(id:int,post:Post):
     i=find_post_index(id)
     post_dict=post.dict()
